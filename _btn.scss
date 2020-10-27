@@ -1,0 +1,52 @@
+@import "_variable";
+
+.btn, //normal state
+.btn:link, //when button is a link
+.btn:visited /*when button is visited*/ {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  background-color: color(red);
+  margin: 1rem auto;
+  font-size: 2rem;
+  border-radius: 10rem; //curves the endgesand
+  transition: all 0.3s;
+  position: relative; //without it - the "position: absolute" will see the body as the parent
+}
+
+.btn-red {
+  background-color: color(red);
+  color: white;
+}
+.btn-red::after {
+  background-color: color(red);
+  color: white;
+}
+.btn:hover {
+  transform: translate(-2px);
+  box-shadow: 0 10px 0.5rem rgba(color(rgb(0, 0, 0)), 0.6 /*shadow density*/);
+}
+.btn:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; //order on the z-axis which wither gets further or closer to you (ons creen)
+  transition: all 0.3s;
+}
+
+//does the pounding effect after hovering
+.btn:hover::after {
+  transform: scalex(1.5) scaley(1.6); //scales it up by the x and y axis
+  opacity: 0; //Makes the color transparents or else the button will stay with the color
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  transform: scalex(1.5) scaley(1.6);
+  box-shadow: 0 0.5rem 1 rem rgba(0, 0, 0, 0.2);
+}
