@@ -1,22 +1,22 @@
 @import "_variable";
 
 .lantern /*container*/ {
-  height: 30rem;
+  height: 40rem;
   position: relative;
 }
 .lantern-picture {
-  height: 30rem;
+  height: 40rem;
   clip-path: circle();
   transition: all 0.3s;
 }
 
 .lantern-header {
-  font-size: 2rem;
+  font-size: 3rem;
   opacity: 0%;
   color: rgb(255, 255, 255);
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 50%;
+  left: 0%;
   transform: translate(-50% -50%);
 
   transition: all 0.3s;
@@ -28,5 +28,5 @@
 }
 .lantern:hover .lantern-header {
   opacity: 1;
-  top: 40%;
+  top: 38%;
 }
