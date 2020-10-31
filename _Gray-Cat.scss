@@ -1,0 +1,13 @@
+@import "_variable";
+
+.graycat {
+  height: 20rem;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.graycat:hover {
+  border-radius: 0;
+  filter: contrast(120%) hue-rotate(45deg);
+  transform: scale(1.3);
+}

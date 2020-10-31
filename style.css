@@ -1,19 +1,15 @@
-html body {
+/*(html body {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html body {
+  box-sizing: border-box;
+}*/
+/*(html body {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
+  box-sizing: border-box;
+}*/
 .btn,
 .btn:link,
 .btn:visited {
@@ -73,6 +69,148 @@ html body {
           transform: scalex(1.5) scaley(1.6);
   -webkit-box-shadow: 0 0.5rem 1 rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1 rem rgba(0, 0, 0, 0.2);
+}
+
+/*(html body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}*/
+.graycat {
+  height: 20rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.graycat:hover {
+  border-radius: 0;
+  -webkit-filter: contrast(120%) hue-rotate(45deg);
+          filter: contrast(120%) hue-rotate(45deg);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+/*(html body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}*/
+.text-effect {
+  background-image: url("./media/SpiritedAway.jpg");
+  background-position: center;
+  color: transparent;
+  font-size: 8rem;
+  -webkit-background-clip: text;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.text-effect:hover {
+  -webkit-transform: skewY(-10deg);
+          transform: skewY(-10deg);
+  letter-spacing: 1.5rem;
+}
+
+/*(html body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}*/
+.cat-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.cat-gallery {
+  margin: 4rem;
+  position: relative;
+}
+
+.cat-photo {
+  position: absolute;
+  height: 20rem;
+  -webkit-box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+  outline-offset: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cat-photo:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+  outline: 1rem solid #00b0ff;
+  z-index: 2;
+}
+
+.cat-gallery:hover .cat-photo:not(:hover) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.cat .cat-photo-1 {
+  top: 10rem;
+  left: 15%;
+}
+
+.cat-photo-2 {
+  top: 15rem;
+  right: 10rem;
+}
+
+.cat-photo-3 {
+  top: -2rem;
+  left: 0;
+}
+
+/*(html body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}*/
+.lantern {
+  height: 30rem;
+  position: relative;
+}
+
+.lantern-picture {
+  height: 30rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.lantern-header {
+  font-size: 2rem;
+  opacity: 0%;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.lantern:hover .lantern-picture {
+  -webkit-filter: contrast(50%) blur(3px);
+          filter: contrast(50%) blur(3px);
+}
+
+.lantern:hover .lantern-header {
+  opacity: 1;
+  top: 40%;
 }
 
 .container {

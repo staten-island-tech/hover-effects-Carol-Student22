@@ -26,7 +26,7 @@
   transform: translate(-2px);
   box-shadow: 0 10px 0.5rem rgba(color(rgb(0, 0, 0)), 0.6 /*shadow density*/);
 }
-.btn:after {
+.btn:after /* inline by default - last child of the selected element - content*/ {
   content: "";
   display: inline-block;
   height: 100%;
@@ -36,7 +36,7 @@
   top: 0;
   left: 0;
   z-index: -1; //order on the z-axis which wither gets further or closer to you (ons creen)
-  transition: all 0.3s;
+  transition: all 0.3s; //animation speed
 }
 
 //does the pounding effect after hovering
